@@ -1,0 +1,7 @@
+{
+  "name": "Buscador de repositorios",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
