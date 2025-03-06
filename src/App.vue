@@ -1,9 +1,22 @@
 <template>
   <ion-app>
-    <ion-router-outlet />
+    <HomePage />
   </ion-app>
 </template>
 
-<script setup lang="ts">
-import { IonApp, IonRouterOutlet } from '@ionic/vue';
+<script lang="ts">
+import { IonApp } from '@ionic/vue';
+import { defineComponent } from 'vue';
+import HomePage from './views/HomePage.vue'; // Importa HomePage.vue
+
+export default defineComponent({
+  components: {
+    IonApp,
+    HomePage, // Registra HomePage como un componente
+  },
+});
 </script>
+
+<style>
+/* Estilos globales (opcional) */
+</style>
